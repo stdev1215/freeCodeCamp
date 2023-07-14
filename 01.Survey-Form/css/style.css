@@ -1,0 +1,87 @@
+/* Layout setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+  width: 640px;
+  min-width: 20%;
+  max-width: 60%;
+  background-color: #1b1b32;
+  padding: 20px 42px;
+}
+
+header {
+  text-align: center;
+  margin-top: 2rem;
+  padding-bottom: 2em;
+}
+
+/* Attribute Setting */
+.pad-bot {
+  padding-bottom: 2em;
+}
+
+h1 {
+  font-size: 1.6em;
+  padding-bottom: 0.4em;
+  font-weight: 500;
+}
+
+header p {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 300;
+}
+
+label {
+  padding-bottom: 10px;
+}
+
+label,
+input,
+textarea,
+select {
+  display: block;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+}
+
+#submit {
+  border: none;
+  background-color: rgb(7, 206, 7);
+  color: #fff;
+}
+
+input[type="submit"] {
+  font-size: 1.2em;
+}
+
+.recommend {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}

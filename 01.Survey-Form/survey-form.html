@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Survey-Form-freeCodeCamp</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- HEADER SECTION -->
+      <header>
+        <h1 id="title" class="">freeCodeCamp Survey Form</h1>
+        <p id="description" class="">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <!-- FORM SECTION -->
+      <form id="survey-form">
+        <!-- SUB-Name -->
+        <div class="form-group">
+          <label class="width-100" id="name-label" for="name">Name </label
+          ><input
+            class="width-100"
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <!-- SUB-Email -->
+        <div class="form-group">
+          <label class="width-100" for="email" id="email-label">Email </label>
+          <input
+            class="width-100"
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <!-- SUB-Age -->
+        <div class="form-group">
+          <label class="width-100" for="number" id="number-label"
+            >Age <span>(Optional)</span></label
+          >
+          <input
+            class="width-100"
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="10"
+            max="120"
+            required
+          />
+        </div>
+        <!-- SUB-Current-Role -->
+        <div class="form-group">
+          <label class="width-100" for="">
+            Which option best describes your current role?</label
+          >
+          <select class="width-100" name="dropdown" id="dropdown">
+            <option value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full-learn">Full-time Learner</option>
+            <option value="full-job">Full-time Job</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <!-- SUB-referrer -->
+        <div class="form-group">
+          <label for="referrer">
+            Would you recommend freeCodeCamp to a friend?
+          </label>
+          <label class="recommend" for="definitely"
+            ><input
+              type="radio"
+              id="definitely"
+              name="referrer"
+              value="definitely"
+              checked
+            />
+            Definitely</label
+          >
+          <label class="recommend" for="maybe"
+            ><input type="radio" id="maybe" name="referrer" value="maybe" />
+            Maybe</label
+          >
+          <label class="recommend" for="notsure"
+            ><input type="radio" id="notsure" name="referrer" value="notsure" />
+            Not sure</label
+          >
+        </div>
+        <!-- SUB-improvement -->
+        <div class="form-group">
+          <label for=""
+            >What would you like to see improved?
+            <span>(Check all that apply)</span></label
+          >
+          <label for="front-end"
+            ><input type="checkbox" id="front-end" value="front-end" />
+            Front-end Projects</label
+          >
+          <label for="back-end"
+            ><input type="checkbox" id="back-end" value="back-end" /> Back-end
+            Projects</label
+          >
+          <label for="challenges"
+            ><input type="checkbox" id="challenges" value="challenges" />
+            Challenges</label
+          >
+          <label for="data-visual"
+            ><input type="checkbox" id="data-visual" value="data-visual" /> Data
+            Visualization</label
+          >
+          <label for="wiki"
+            ><input type="checkbox" id="wiki" value="wiki" /> Wiki</label
+          >
+          <label for="forum"
+            ><input type="checkbox" id="forum" value="forum" /> Forum</label
+          >
+        </div>
+        <!-- SUB-Suggestion -->
+        <div class="form-group">
+          <label class="width-100" for="textarea"
+            >Any comments or suggestions?</label
+          >
+          <textarea
+            class="width-100"
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="3"
+          ></textarea>
+        </div>
+        <!-- SUB-button -->
+        <div class="form-group">
+          <input class="width-100" type="submit" id="submit" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

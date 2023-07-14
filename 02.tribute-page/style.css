@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #eeeeee;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 1rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+.title-para {
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+.title-para {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+#img-div {
+  width: 100%;
+  background-color: #fff;
+}
+img {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+#image {
+  max-width: 100%;
+}
+
+#img-caption {
+  margin: 15px 0 5px 0;
+  padding: 1.6rem;
+}
+
+.personal-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  padding: 3.6rem;
+}
+
+#tribute-info {
+  width: 30%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2;
+}
+
+li {
+  padding-bottom: 1rem;
+}
+
+.years {
+  padding-right: 1rem;
+}
+
+.quote-of-norman {
+  width: 30%;
+}
+
+.norman-quote {
+  line-height: 1.5;
+  padding-bottom: 1rem;
+}
+
+#tribute-link {
+  color: #477ca7;
+}
