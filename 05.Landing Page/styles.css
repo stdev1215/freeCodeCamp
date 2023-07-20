@@ -1,0 +1,253 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+.container,
+.second-container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#header {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#header-img {
+  width: 350px;
+  height: 50px;
+}
+
+#nav-bar ul {
+  display: flex;
+  gap: 5rem;
+}
+
+#nav-bar li {
+  display: block;
+  list-style-type: none;
+  font-size: 2.2rem;
+}
+
+#nav-bar .nav-link {
+  color: #000;
+  text-decoration: none;
+}
+
+/* HERO SECTION */
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.head-h3 {
+  font-size: 3.2rem;
+}
+
+.hero-section {
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 8rem;
+  text-align: center;
+  width: 80%;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="email"] {
+  width: 250px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+input[type="submit"] {
+  font-size: 1.6rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  background-color: #f1c40f;
+  border: none;
+  border-radius: 0.3rem;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.34);
+}
+
+input[type="submit"]:hover {
+  background-color: #ff8c00;
+}
+
+.features-section {
+  max-width: 100%;
+  min-width: 70%;
+  width: 100%;
+  margin: 5rem auto 8rem auto;
+}
+.icon {
+  width: 20vw;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-grid {
+  display: flex;
+  align-items: center;
+}
+
+/* YOUTUBE VIDEO */
+.video-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  max-width: 560px;
+  width: 100%;
+  height: 312px;
+}
+
+/* PRICE SECTION */
+.price-section {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.price-card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+}
+
+.title {
+  width: 100%;
+  background-color: antiquewhite;
+  padding: 15px 0;
+  font-weight: 700;
+}
+
+.price-description > h3 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.price-description > ul {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.price-lists > li {
+  list-style: none;
+  line-height: 1.8;
+}
+
+.price-description > button {
+  margin-bottom: 15px;
+  padding: 8px 16px;
+  font-size: 1.6rem;
+  background-color: #f1c40f;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.price-description > button:hover {
+  background-color: #ff8c00;
+}
+
+footer {
+  width: 100%;
+  background-color: beige;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 15px 0;
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-right: 2rem;
+}
+
+footer > ul > li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.footer-paragraph {
+  margin-right: 2rem;
+}
+
+/* MEDIA */
+@media (max-width: 800px) {
+  #header {
+    flex-direction: column;
+  }
+
+  .hero-section {
+    margin-top: 14rem;
+  }
+}
+
+@media (max-width: 614px) {
+  .icon {
+    visibility: hidden;
+  }
+
+  .feature-grid {
+    flex-direction: column;
+  }
+
+  .features-description {
+    text-align: center;
+  }
+
+  .price-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .price-card {
+    width: 60%;
+  }
+}

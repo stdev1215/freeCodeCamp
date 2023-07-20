@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/3fcaa1d2c6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header id="header">
+        <img
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          alt="Trombones logo"
+          id="header-img"
+        />
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="#features-section" class="nav-link">Features</a></li>
+            <li><a href="#video-youtube" class="nav-link">How It Works</a></li>
+            <li><a href="#price" class="nav-link">Pricing</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="hero-section">
+        <h3 class="head-h3 pb-2">Handcrafted, home-made masterpieces</h3>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+            name="email"
+          />
+          <input
+            type="submit"
+            id="submit"
+            class="submit-btn"
+            value="GET STARTED"
+          />
+        </form>
+      </section>
+      <section class="second-container">
+        <div id="features-section" class="features-section">
+          <div class="feature-grid">
+            <div class="icon">
+              <i class="fa-solid fa-3x fa-fire icon" style="color: #ff8c00"></i>
+            </div>
+            <div class="features-description">
+              <h3 class="head-h3">Premium Materials</h3>
+              <p class="paragraph">
+                Our trombones use the shiniest brass which is sourced locally.
+                This will increase the longevity of your purchase.
+              </p>
+            </div>
+          </div>
+          <div class="feature-grid">
+            <div class="icon">
+              <i
+                class="fa-solid fa-truck fa-3x icon"
+                style="color: #ff8c00"
+              ></i>
+            </div>
+            <div class="features-description">
+              <h3 class="head-h3">Fast Shipping</h3>
+              <p class="paragraph">
+                We make sure you recieve your trombone as soon as we have
+                finished making it. We also provide free returns if you are not
+                satisfied.
+              </p>
+            </div>
+          </div>
+          <div class="feature-grid">
+            <div class="icon">
+              <i
+                class="fa-solid fa-battery-full fa-3x icon"
+                style="color: #ff8c00"
+              ></i>
+            </div>
+            <div class="features-description">
+              <h3 class="head-h3">Quality Assurance</h3>
+              <p class="paragraph">
+                For every purchase you make, we will ensure there are no damages
+                or faults and we will check and test the pitch of your
+                instrument.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="video-youtube" class="video-section">
+          <iframe
+            id="video"
+            class="video-setting"
+            src="https://youtube.com/embed/y8Yv4pnO7qc?controls=1"
+            frameborder="0"
+          ></iframe>
+        </div>
+        <div id="price" class="price-section">
+          <div class="price-card">
+            <div class="title">TENOR TROMBONE</div>
+            <div class="price-description">
+              <h3 class="head-h3 price-title">$600</h3>
+              <ul class="price-lists">
+                <li class="price-list">Lorem ipsum.</li>
+                <li class="price-list">Lorem ipsum.</li>
+                <li class="price-list">Lorem ipsum.</li>
+                <li class="price-list">Lorem ipsum. adsf asdf</li>
+              </ul>
+              <button class="price-btn">SELECT</button>
+            </div>
+          </div>
+          <div class="price-card">
+            <div class="title">BASS TROMBONE</div>
+            <div class="price-description">
+              <h3 class="head-h3 price-title">$900</h3>
+              <ul class="price-lists">
+                <li class="price-list">Lorem ipsum.</li>
+                <li class="price-list">Lorem ipsum.</li>
+                <li class="price-list">Lorem ipsum asdfads asdf.</li>
+                <li class="price-list">Lorem ipsum.</li>
+              </ul>
+              <button class="price-btn">SELECT</button>
+            </div>
+          </div>
+          <div class="price-card">
+            <div class="title">VALVE TROMBONE</div>
+            <div class="price-description">
+              <h3 class="head-h3 price-title">$1200</h3>
+              <ul class="price-lists">
+                <li class="price-list">Plays similar to a Trumpet</li>
+                <li class="price-list">Great for Jazz Bands</li>
+                <li class="price-list">Plays similar to a Trumpet</li>
+                <li class="price-list">Great for Jazz</li>
+              </ul>
+              <button class="price-btn">SELECT</button>
+            </div>
+          </div>
+        </div>
+        <footer class="footer-section">
+          <ul class="footer-lists">
+            <li class="footer-list">Privacy</li>
+            <li class="footer-list">Terms</li>
+            <li class="footer-list">Contact</li>
+          </ul>
+          <p class="footer-paragraph">Copyright &copy; 2023, Steve Testing</p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
+
+<!-- 
+1.  Your product landing page should have a header element with a corresponding id="header"
+2.  You can see an image within the header element with a corresponding id="header-img" (A logo would make a good image here)
+3.  Within the #header element, you can see a nav element with a corresponding id="nav-bar"
+4.  You can see at least three clickable elements inside the nav element, each with the class nav-link
+5.  When you click a .nav-link button in the nav element, you are taken to the corresponding section of the landing page
+6.  You can watch an embedded product video with id="video"
+7.  Your landing page has a form element with a corresponding id="form"
+8.  Within the form, there is an input field with id="email" where you can enter an email address
+9.  The #email input field should have placeholder text to let users know what the field is for
+10. The #email input field uses HTML5 validation to confirm that the entered text is an email address
+11. Within the form, there is a submit input with a corresponding id="submit"
+12. When you click the #submit element, the email is submitted to a static page (use this mock URL: https://www.freecodecamp.com/email-submit)
+13. The navbar should always be at the top of the viewport
+14. Your product landing page should have at least one media query
+15. Your product landing page should utilize CSS flexbox at least once
+16. Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS 
+-->
+
+<!-- 
+  Image link 
+  https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png 
+
+  Video link
+  https://youtu.be/y8Yv4pnO7qc
+
+  FontAwesome
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+-->
